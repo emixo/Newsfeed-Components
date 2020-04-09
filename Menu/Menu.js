@@ -46,7 +46,7 @@ const menu = (menuItems) => {
     listItem.textContent = item;
     menuList.appendChild(listItem);
   });
-
+  menu.classList.add('menu')
   const menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", (event) => {
     menu.classList.toggle("menu--open");
